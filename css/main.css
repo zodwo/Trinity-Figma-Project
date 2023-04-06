@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
+
+.container {
+    max-width: 1800px;
+    width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+.activate {
+    border-bottom: 3px solid #22ecf3;
+    border-bottom-right-radius: 5px;
+}
+
+
+body {
+    background-color: #161516;
+    font-family: 'Kanit', sans-serif;
+    height: 200vh;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    padding-top: 30px;
+    background-color: #161516;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-col2 {
+    height: 147px;
+}
+
+.logo {
+    background: url(/img/logopc.png) no-repeat;
+    width: 147px;
+    height: 147px;
+}
+
+.menu-logo {
+    background-image: url(/img/menu.png);
+    width: 71px;
+    height: 11px;
+    cursor: pointer;
+}
+
+
+.nav-col1 {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    transition: 0.5s;
+}
+
+.nav-col1 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 1em;
+    color: #D7D7D7;
+}
+
+.nav-col3{
+    position: relative;
+}
+
+
+.nav-col3,
+.nav-col3-txt-wrapper {
+    display: flex;
+    gap: 80px;
+    transition: 0.5s;
+}
+
+.nav-col3 a,
+.nav-col3 span {
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-col3 span img {
+    margin-left: 10px;
+}
+
+.nav-col1 .list-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 43px;
+    transition: 0.5s;
+}
+
+
+.nav-col3-txt-wrapper {
+    position: absolute;
+    right: -200px;
+    display: none;
+    width: 40px;
+    background-color: #161516;
+    display: none;
+}
+
+.nav-col3-txt-wrapper.active {
+    top: 40px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*------------------ FRAME 1---------------- */
+.frame1 {
+    margin-top: 120px;
+}
+
+.frame1-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame1-header span {
+    font-family: 'Kanit';
+    font-size: 1em;
+    color: #22ECF3;
+    text-decoration-line: underline;
+
+}
+
+.frame1-header span:not(.frame1-header span:first-child) {
+    color: #717171;
+    text-decoration-line: none;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 4.375em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Frame 1 center------------------------------------------------------- */
+.frame1-select {
+    margin: auto;
+    margin-top: 70px;
+    max-width: 1400px;
+    width: 100%;
+
+    transition: 0.5s;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.frame1-select a {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #414141;
+    margin: auto;
+}
+
+.frame1-select a:first-child {
+    color: #F2F2F2;
+}
+
+/* -------------------Frame card ------------------ */
+.frame1-card-all-wrapper {
+    margin-top: 50px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+
+.card img:nth-child(even) {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card img:nth-child(odd) {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.card-text-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 60px 50px;
+    bottom: 0;
+    background: linear-gradient(4.23deg, #161516 -7.57%, rgba(22, 21, 22, 0) 150.28%);
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0px;
+    align-items: center;
+}
+
+
+.card-text h2 {
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.card-text button {
+    width: 108px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid #22ECF3;
+    border-radius: 15px;
+
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 1em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* !-------------------------------------- */
+@media (max-width:1054px) {
+
+    .nav-col1,
+    .nav-col1 .list-wrapper,
+    .nav-col3-txt-wrapper {
+        gap: 10px;
+    }
+
+    .nav-col3 {
+        gap: 20px;
+    }
+
+    .list-wrapper {
+        gap: 10px;
+    }
+
+    .frame1-select a {
+        font-size: 2em;
+    }
+
+    .card-text h2 {
+        font-size: 1.7em;
+    }
+
+
+    .card-text-wrapper {
+        padding: 20px 10px;
+    }
+}
+
+
+
+/* !Mobile */
+@media (max-width:769px) {
+
+    /* ! Main Menu Bar */
+
+    .navbar {
+        gap: 40px;
+    }
+
+    .nav-col1 .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+
+        left: -250px;
+        top: 70px;
+        padding-top: 100px;
+
+        background-color: #161516;
+        z-index: -1;
+        margin: 20px 0;
+
+        width: 200px;
+        height: 100vh;
+    }
+
+
+    .nav-col1.active .list-wrapper a {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav-col1.active .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        top: 70px;
+        left: 0px;
+        gap: 20px;
+        width: 200px;
+        height: 100vh;
+        margin: 20px 0;
+    }
+
+    .logo {
+        background: url(/img/logomobil.png) no-repeat center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ! Lang Menu Bar */
+
+
+    .nav-col3 a {
+        display: none;
+    }
+
+    .nav-col3-txt-wrapper.active {
+        top: 30px;
+        right: 6px;
+        display: block;
+        z-index: 8;
+    }
+
+    /* -----------------------Frame 1 ----------------------*/
+    h1 {
+        max-width: 270px;
+        width: 100%;
+    }
+
+    .frame1-select a {
+        font-size: 1.7em;
+    }
+
+    .frame1 {
+        margin-top: 50px;
+    }
+
+    .frame1-card-all-wrapper {
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+}
