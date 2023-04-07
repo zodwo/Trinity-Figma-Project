@@ -17,16 +17,18 @@
 body {
     background-color: #161516;
     font-family: 'Kanit', sans-serif;
-    height: 200vh;
 }
 
 header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    z-index: 4;
+    z-index: 10;
     padding-top: 30px;
     background-color: #161516;
 }
+
+
 
 .navbar {
     display: flex;
@@ -69,7 +71,7 @@ header {
     color: #D7D7D7;
 }
 
-.nav-col3{
+.nav-col3 {
     position: relative;
 }
 
@@ -225,7 +227,6 @@ h1 {
 .card-text-wrapper {
     position: absolute;
     width: 100%;
-    height: 60px;
     padding: 60px 50px;
     bottom: 0;
     background: linear-gradient(4.23deg, #161516 -7.57%, rgba(22, 21, 22, 0) 150.28%);
@@ -235,7 +236,6 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 0px;
     align-items: center;
 }
 
@@ -243,7 +243,7 @@ h1 {
 .card-text h2 {
     font-family: 'Kanit';
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2em;
     display: flex;
     align-items: center;
     color: #FFFFFF;
@@ -263,6 +263,96 @@ h1 {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+
+/* --------------- ---------------FRAME 2------------------------ */
+
+
+.frame2 {
+    margin-top: 260px;
+}
+
+.frame2-row {
+    display: flex;
+    gap: 60px;
+}
+
+.frame2-col iframe {
+    max-width: 1100px;
+    width: 100%;
+    height: 800px;
+    border-radius: 0 20px 10px 0;
+}
+
+.frame2-col {
+    flex-basis: 60%;
+}
+
+.frame2-col2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.frame2-col2 input {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 80px;
+
+    color: #fff;
+    padding-left: 20px;
+    border: 0;
+    background:
+        linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+    border-radius: 10px;
+
+    font-family: 'Kanit';
+    font-size: 1.25em;
+    color: #707070;
+}
+
+.frame2-col2 input:nth-child(4) {
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+
+.frame2-col2 span {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 4.375em;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+form {
+    position: relative;
+}
+
+form .btn {
+    max-width: 310px;
+    width: 100%;
+    height: 90px;
+
+
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #33B7BC;
+    border-radius: 10px;
+
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 1.125em;
+    cursor: pointer;
+}
+
+
+
+
 
 
 /* !-------------------------------------- */
@@ -292,7 +382,13 @@ h1 {
 
 
     .card-text-wrapper {
-        padding: 20px 10px;
+        padding: 60px 10px;
+    }
+
+
+    .frame2-col2 input:nth-child(4) {
+        padding-top: 20px;
+        padding-bottom: 150px;
     }
 }
 
@@ -344,6 +440,12 @@ h1 {
         margin: 20px 0;
     }
 
+    .nav-col2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .logo {
         background: url(/img/logomobil.png) no-repeat center/cover;
         display: flex;
@@ -362,8 +464,8 @@ h1 {
 
     .nav-col3-txt-wrapper.active {
         top: 30px;
-        right: 6px;
-        display: block;
+        right: 16px;
+        display: flex;
         z-index: 8;
     }
 
@@ -386,11 +488,30 @@ h1 {
         grid-template-columns: repeat(1, 1fr);
     }
 
-  
+    /* -----------------------Frame 2 ----------------------*/
+    .frame2 {
+        margin-top: 100px;
+    }
 
+    .frame2-col iframe {
+        display: none;
+    }
 
+    .frame2-row {
+        flex-direction: column;
+    }
 
+    .frame2-col2 span {
+        margin-bottom: 80px;
+    }
 
+    .btn {
+        max-width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 
 
 
