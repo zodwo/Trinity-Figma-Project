@@ -114,25 +114,125 @@ header {
 
 .nav-col3-txt-wrapper {
     position: absolute;
-    right: -200px;
-    display: none;
+    height: 0;
     width: 40px;
+    top: 40px;
+    right: 15px;
+    opacity: 0;
+    overflow: hidden;
     background-color: #161516;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
 }
 
 .nav-col3-txt-wrapper.active {
     top: 40px;
     right: 15px;
+    height: 100px;
+    gap: 0;
+    opacity: 1;
+}
+
+
+.navigator-dubai {
+    position: absolute;
+    top: 30px;
+    width: 110px;
+    right: 110px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    background-color: #161516;
     display: flex;
     flex-direction: column;
-    gap: 0;
     align-items: center;
     justify-content: center;
+    gap: 80px;  
+}
+
+
+.navigator-dubai.active {
+    display: block; 
+    top: 40px;
+    right: 110px;
+    overflow: visible;
+    opacity: 1;
+    height: 220px;
+    gap: 0px;
+}
+
+
+.navigator-dubai a {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.for-mobile {
+    display: none;
+}
+
+
+/* !-------------------------------------- */
+@media (max-width:1054px) {
+
+    .nav-col1,
+    .nav-col1 .list-wrapper,
+    .nav-col3-txt-wrapper {
+        gap: 10px;
+    }
+
+    .nav-col3 {
+        gap: 20px;
+    }
+
+    .list-wrapper {
+        gap: 10px;
+    }
+
+    .frame1-select a {
+        font-size: 2em;
+    }
+
+    .card-text h2 {
+        font-size: 1.7em;
+    }
+
+
+    .card-text-wrapper {
+        padding: 60px 10px;
+    }
+
+    .navigator-dubai {
+        top: 20px;
+        right: 53px;
+    }
+
+    .navigator-dubai.active {
+        top: 40px;
+        right: 53px;
+    }
+
+    /* ///////////////////////////////???????????????????? */
+    .frame2-col2 input:nth-child(4) {
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+
 }
 
 
 
+
 /*------------------ FRAME 1---------------- */
+
+
 .frame1 {
     margin-top: 120px;
 }
@@ -453,10 +553,49 @@ form .btn {
     background: #33B7BC;
 }
 
-/*----------------------------------FOOTER-------------------------------*/
-/*----------------------------------FOOTER-------------------------------*/
-/*----------------------------------FOOTER-------------------------------*/
-/*----------------------------------FOOTER-------------------------------*/
+
+.pop-up-wrapper{
+    position: absolute;
+    z-index: 40;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2420px;
+    background-color: rgb(241, 16, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------START FOOTER------------------------------*/
+/*----------------------------------START FOOTER------------------------------*/
+/*----------------------------------START FOOTER-----------------------------*/
+/*----------------------------------START FOOTER------------------------------*/
 
 footer {
     border-top: 1px solid #272727;
@@ -503,7 +642,7 @@ footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     font-size: 1.125em;
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
     color: #E2E2E2;
 }
 
@@ -538,10 +677,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 @media (max-width:828px) {
-.footer-col-2-row-col-1 .nmbr {
-    font-size: 1.5em;
-}
+    .footer-col-2-row-col-1 .nmbr {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -669,14 +809,15 @@ a.btn {
     padding: 10px 0;
     border-bottom: 1px solid #272727;
 }
-.footer-logo-wrapper img{
+
+.footer-logo-wrapper img {
     object-fit: fill;
     height: 45px;
     cursor: pointer;
 }
 
 
-.footer-end{
+.footer-end {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -685,30 +826,32 @@ a.btn {
 }
 
 .footer-end a:first-child,
-.footer-end a:nth-child(2){
+.footer-end a:nth-child(2) {
     font-family: 'Kanit';
     font-size: 1em;
     display: flex;
     align-items: center;
     color: #33B7BC;
 }
-.footer-end a:nth-child(2){
+
+.footer-end a:nth-child(2) {
     color: #525252 !important;
 }
 
-.social-wrapper{
+.social-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.social-wrapper a{
+.social-wrapper a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.social-wrapper img{
+
+.social-wrapper img {
     height: 24px;
     width: 24px;
 }
@@ -728,46 +871,7 @@ a.btn {
 
 
 
-/* !-------------------------------------- */
-@media (max-width:1054px) {
 
-    .nav-col1,
-    .nav-col1 .list-wrapper,
-    .nav-col3-txt-wrapper {
-        gap: 10px;
-    }
-
-    .nav-col3 {
-        gap: 20px;
-    }
-
-    .list-wrapper {
-        gap: 10px;
-    }
-
-    .frame1-select a {
-        font-size: 2em;
-    }
-
-    .card-text h2 {
-        font-size: 1.7em;
-    }
-
-
-    .card-text-wrapper {
-        padding: 60px 10px;
-    }
-
-
-    .frame2-col2 input:nth-child(4) {
-        padding-top: 20px;
-        padding-bottom: 150px;
-    }
-
-    /* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
-
-
-}
 
 
 
@@ -833,10 +937,19 @@ a.btn {
     }
 
     /* ! Lang Menu Bar */
-
+    .for-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+    
 
     .nav-col3 a {
         display: none;
+    }
+
+    .nav-col3 .navigator-dubai a {
+        display: flex !important;
     }
 
     .nav-col3-txt-wrapper.active {
@@ -847,9 +960,6 @@ a.btn {
     }
 
     /* -----------------------Frame 1 ----------------------*/
-    .for-mobile {
-        display: none;
-    }
 
     h1 {
         max-width: 270px;
@@ -985,7 +1095,7 @@ a.btn {
     }
 
 
-    .footer-col1{
+    .footer-col1 {
         border-bottom: 1px solid #272727;
     }
 
@@ -994,7 +1104,7 @@ a.btn {
         align-items: inherit;
         margin: auto;
     }
-    
+
 
     .footer-col-2-row-col-1 .nmbr {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1015,21 +1125,24 @@ a.btn {
         }
     }
 
-    .form-wrapper{
+    .form-wrapper {
         display: none;
     }
 
     .footer-form-wrapper {
         margin-top: 10px;
     }
+
     .footer-col-row-col a {
         margin-bottom: 15px;
     }
-    .footer-col1{
+
+    .footer-col1 {
         border: 0;
         border-bottom: 1px solid #1C1C1C;
     }
-    .footer-form-text2{
+
+    .footer-form-text2 {
         margin: auto;
         margin-top: 30px;
     }
@@ -1039,7 +1152,7 @@ a.btn {
     }
 
 
-    .footer-end{
+    .footer-end {
         margin-top: 30px;
         margin-bottom: 30px;
         display: flex;
@@ -1047,8 +1160,8 @@ a.btn {
         justify-content: space-between;
         flex-direction: column-reverse;
     }
-    
-    
+
+
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
