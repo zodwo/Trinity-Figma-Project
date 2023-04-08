@@ -7,6 +7,9 @@
     margin: auto;
 }
 
+.not-pc {
+    display: none;
+}
 
 .activate {
     border-bottom: 3px solid #22ecf3;
@@ -191,14 +194,14 @@ h1 {
     margin: auto;
 }
 
-.frame1-select a:first-child {
+.frame1-select .activate {
     color: #F2F2F2;
 }
 
 /* -------------------Frame card ------------------ */
 .frame1-card-all-wrapper {
     margin-top: 50px;
-    gap: 10px;
+    gap: 10px !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -232,6 +235,7 @@ h1 {
     background: linear-gradient(4.23deg, #161516 -7.57%, rgba(22, 21, 22, 0) 150.28%);
 }
 
+
 .card-text {
     display: flex;
     flex-direction: row;
@@ -246,6 +250,7 @@ h1 {
     font-size: 2em;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #FFFFFF;
 }
 
@@ -280,12 +285,17 @@ h1 {
 .frame2-col iframe {
     max-width: 1100px;
     width: 100%;
-    height: 800px;
+    height: 860px;
     border-radius: 0 20px 10px 0;
 }
 
 .frame2-col {
     flex-basis: 60%;
+}
+
+.frame2-col,
+.frame2-col2 {
+    height: 860px;
 }
 
 .frame2-col2 {
@@ -296,9 +306,9 @@ h1 {
 
 .frame2-col2 input {
     display: block;
-    margin-bottom: 40px;
     width: 100%;
     height: 80px;
+    margin-bottom: 30px;
 
     color: #fff;
     padding-left: 20px;
@@ -321,16 +331,19 @@ h1 {
 .frame2-col2 span {
     font-family: 'Kanit';
     font-weight: 500;
-    font-size: 4.375em;
+    font-size: 4.13em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+
     display: flex;
     align-items: center;
-    color: #FFFFFF;
-    margin-bottom: 80px;
-    text-align: center;
+    justify-content: center;
 }
 
-form {
+.frame2-col2 form {
     position: relative;
+    margin-right: 20px;
 }
 
 form .btn {
@@ -350,7 +363,282 @@ form .btn {
     cursor: pointer;
 }
 
+/* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
 
+.frame2-bg-mail-card {
+    width: 100%;
+    height: 868px;
+    ;
+    background: url(/img/bg.png) center;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame2-bg-card {
+    max-width: 1170px;
+    width: 100%;
+    background: url(/img/Group78.png) no-repeat center/cover;
+    margin: auto;
+}
+
+
+.frame2-bg-card-main {
+    width: 100%;
+    height: 407px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 20px 129px 20px 20px;
+    box-shadow: 0px 14px 44px #0E0E0E, 0px 10px 62px #1b1616af;
+    opacity: .5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+.bg-card-main-wrapper {
+    transform: inherit;
+
+}
+
+.bg-card-text p {
+    max-width: 641px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.125em;
+    color: #eeeeee;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+
+.bg-card-input-wrapper form {
+    display: flex;
+    gap: 20px;
+}
+
+.form-input-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.form-input-wrapper img {
+    position: absolute;
+    padding-left: 20px;
+}
+
+.form-input-wrapper input {
+    width: 425px;
+    height: 68px;
+    background: #2B282B;
+    border-radius: 10px;
+    border: none;
+    padding-left: 60px;
+
+    font-family: 'Kanit';
+    font-size: 1.125em;
+    color: #868686;
+}
+
+.bg-card-input-wrapper button {
+    max-width: 180px;
+    height: 68px;
+    background: #33B7BC;
+}
+
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+
+footer{
+    border-top: 1px solid #272727;
+    margin-top: 100px;
+}
+.footer-row{
+    display: flex;
+}
+.footer-col-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col1{
+    max-width: 1120px;
+    width: 100%;
+    border-right:  1px solid #272727;
+}
+
+.footer-col-row-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-row-col .headtxt{
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 90px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.footer-col-row-col a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #E2E2E2;
+}
+.footer-col-2-number-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-col-2-number-wrapper-row{
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.footer-col2{
+    max-width:550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.nmbr{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 90px;
+    color: #FFFFFF;
+}
+
+.footer-col-2-row-col-1{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 100px;
+    flex-direction: column;
+}
+
+.footer-col-2-row-col-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width:90px;
+    height: 86px;
+}
+.telegram,.whatsapp{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: rgba(52, 170, 223, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.whatsapp {
+    background-color: rgba(67, 216, 84, 1);
+}
+
+a.btn{
+    width: 100%;
+    height: 64px;
+    border: 2px solid #33B7BC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    display: grid;
+    text-transform: uppercase;
+    grid-column-end: span 2;
+
+}
+
+.footer-form-wrapper{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-form-text2 span{
+    display: flex;
+    max-width: 316px;
+    width: 100%;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+.footer-form-text2{
+    margin-bottom: 20px;
+}
+
+.form-wrapper form input{
+    width: 100% !important; 
+    height: 60px;
+    padding-left: 20px;
+    border: 0;
+    background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+    border-radius: 10px;
+    font-family: 'Kanit';
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+.form-wrapper form{
+    display: flex;
+}
+
+.form-wrapper {
+    position: relative;
+}
+.form-wrapper button{
+    width: 101px;
+    height: 60px;
+    background: #33B7BC;
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    right: 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: .9375em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
 
 
 
@@ -390,6 +678,10 @@ form .btn {
         padding-top: 20px;
         padding-bottom: 150px;
     }
+
+    /* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
+
+
 }
 
 
@@ -470,6 +762,10 @@ form .btn {
     }
 
     /* -----------------------Frame 1 ----------------------*/
+    .for-mobile {
+        display: none;
+    }
+
     h1 {
         max-width: 270px;
         width: 100%;
@@ -486,11 +782,23 @@ form .btn {
     .frame1-card-all-wrapper {
         gap: 50px;
         grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+        height: 240px;
+    }
+
+    .card img {
+        height: 240px;
+        border-radius: 10px !important;
     }
 
     /* -----------------------Frame 2 ----------------------*/
     .frame2 {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .frame2-col iframe {
@@ -513,9 +821,94 @@ form .btn {
         margin: auto;
     }
 
+    .frame2-col2 input {
+        height: 60px;
+    }
+
+    /* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
+    .frame2-bg-card-main {
+        border-radius: 20px 69px 20px 20px;
+        box-shadow: 0px 14px 33px #0E0E0E, 0px 10px 35px #1b1616af;
+    }
+
+    .bg-card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-card-text p {
+        margin-bottom: 20px;
+        padding: 0 5px;
+    }
+
+    .form-input-wrapper input {
+        width: 100%;
+    }
+
+    .bg-card-input-wrapper form {
+        flex-direction: column;
+    }
+
+    .frame2-bg-card-main {
+        opacity: 1;
+    }
+
+    .bg-card-text-header {
+        width: 210px;
+        height: 55px;
+
+        font-family: sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    .card-text {
+        align-items: inherit !important;
+        gap: 10px !important;
+    }
+
+    .card-text-wrapper {
+        padding: 10px !important;
+    }
+
+    .card-text h2 {
+        font-size: 1.125em !important;
+    }
+
+    .card-text button {
+        width: 79px !important;
+        height: 39px !important;
+    }
+
+    .frame2-bg-mail-card {
+        height: 600px;
+    }
 
 
 
-
+    /*----------------------------------FOOTER-------------------------------*/
+    /*----------------------------------FOOTER-------------------------------*/
+    /*----------------------------------FOOTER-------------------------------*/
+    /*----------------------------------FOOTER-------------------------------*/
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col2{
+        margin: auto;
+    }
+    .nmbr{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;}
+    /*----------------------------------FOOTER-------------------------------*/
+    /*----------------------------------FOOTER-------------------------------*/
+    /*----------------------------------FOOTER-------------------------------*/
 
 }
