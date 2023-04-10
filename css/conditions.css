@@ -663,22 +663,6 @@ form .btn {
 
 
 
-.message-box-col{
-    height: 94px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    
-    background: linear-gradient(108.31deg, rgba(17, 27, 35, 0.3) 3.3%, rgba(21, 23, 28, 0.3) 89.67%);
-    border: 1.5px solid #27323D;
-    border-radius: 20px;
-    padding: 30px ;
-    cursor: pointer;
-}
-
-
-
 
 .col-header{
     font-family: 'Kanit';
@@ -705,7 +689,7 @@ form .btn {
 
 .mb-col-quit{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 
     right: 0;
@@ -715,6 +699,22 @@ form .btn {
 }
 
 /* -------------------------input-----------------------  */
+
+.message-box-col{
+    height: 99px ;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    
+    background: linear-gradient(108.31deg, rgba(17, 27, 35, 0.3) 3.3%, rgba(21, 23, 28, 0.3) 89.67%);
+    border: 1.5px solid #27323D;
+    border-radius: 20px;
+    padding: 30px ;
+    cursor: pointer;
+}
+
+
 
 .chk{
     display: block;
@@ -734,7 +734,7 @@ form .btn {
 }
 
 .frame3-message-box-row input:checked + label .message-box-col {
-    height: 250px !important;
+    height: fit-content;    
 }
 .frame3-message-box-row input:checked + label .message-box-col .mb-col .col-header .mc-col.mb-col-quit .cls{
     display: block !important;
@@ -742,11 +742,7 @@ form .btn {
 .frame3-message-box-row input:checked + label .message-box-col .mb-col .col-header .mc-col.mb-col-quit .chk{
     display: none !important;
 }
-@media (max-width:365px) {
-    .frame3-message-box-row input:checked + label .message-box-col {
-        height:300px !important;
-    }
-}
+
 
 
 /* -------------------------input-----------------------  */
