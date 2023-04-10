@@ -78,7 +78,7 @@ body {
 .col2 .swiper-wrapper .swiper-slide img {
     object-fit: cover;
     width: 100% !important;
-    border-radius: 40px 0px 0px 40px;
+    border-radius: 0;
     height: 1155px;
 }
 
@@ -163,7 +163,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     background: url(/img/icon/date1.png) no-repeat;
 }
 
-
+#time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 select {
