@@ -88,7 +88,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Lamborghini Urus</h2>
-                                    <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +102,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Ferrari Roma</h2>
-                                    <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +116,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Rolls-Royce Ghost</h2>
-                                    <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +130,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Porsche 911 Turbo S</h2>
-                                    <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +144,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Lamborghini Urus</h2>
-                                <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -148,7 +158,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Ferrari Roma</h2>
-                                <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +172,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Lamborghini Urus</h2>
-                                <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +186,9 @@
                         <div class="card-text-wrapper">
                             <div class="card-text">
                                 <h2>Ferrari Roma</h2>
-                                <button id="open-pop">RENT</button>
+                                <a href="rentcar.html">
+                                    <button class="open-pop">RENT</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -245,11 +261,8 @@
                 <a href="">Bentley</a>
             </div>
         </div>
-        <!-- pop up -->
-        <div class="pop-up-wrapper">
-            
-        </div>
-        <!-- pop up -->
+
+
     </main>
 
     <footer>
@@ -371,6 +384,15 @@
             BarNav = document.querySelector(".navigator-dubai");
             BarNav.classList.toggle("active")
         }
+
+
+        popup = document.querySelector(".open-pop");
+        popup.onclick = function () {
+            popbar = document.querySelector(".pop-up-wrapper");
+            popbar.classList.toggle("active")
+        }
+
+
     </script>
 </body>
 

@@ -30,7 +30,7 @@ table {
 	border-spacing: 0;
 }
 
-input:hover {
+input:hover,select:hover {
 	background: linear-gradient(90.75deg, #1C1C1C 0.65%, #1B1B1B 107.06%) !important;
 	border-radius: 10px !important;
 	outline: 1px solid  rgba(51, 183, 188, 1);
