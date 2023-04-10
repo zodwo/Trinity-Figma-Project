@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/rent.css">
     <!-- icon -->
     <link rel="icon" href="img/icon/Group.svg">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
     <title>TRINITY</title>
 </head>
 
@@ -121,7 +124,7 @@
                 <div class="col">
                     <span class="number">
                         3.6
-                    <span class="sec">sec</span>
+                        <span class="sec">sec</span>
                     </span>
                     <span class="property">Horsepower</span>
                 </div>
@@ -138,20 +141,41 @@
                     <span class="property">Quantity of Seats</span>
                 </div>
             </div>
-        
+
 
         </div>
 
         <div class="col2">
-            <div class="col-img-wrap">
-                <div class="img-wrp1">
-                    <img src="img/Rectangle 13.jpg">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 13.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 14_2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 174.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 174_1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 175_1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 177.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Rectangle 178.jpg">
+                    </div>
                 </div>
-                <div class="btn-wrapper">
-                    <span class="arws">
-                        < </span>
-                            <span>|</span>
-                            <span class="arws">></span>
+                <div class="swiper-pagination"></div>
+                <div class="btn-big-wrapper">
+                    <div class="swiper-button-prev btn-wrapper"></div>
+                    <div class="line btn-wrapper"></div>
+                    <div class="swiper-button-next btn-wrapper"></div>
                 </div>
             </div>
         </div>
@@ -164,7 +188,32 @@
 
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+    </script>
+    <script>
 
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
 
 </body>
 
