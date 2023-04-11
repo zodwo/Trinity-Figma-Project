@@ -1519,7 +1519,9 @@ a.btn {
     .last-card-wrapper {
         display: none;
     }
-
+    .last-card-wrapper-mobile {
+        display: block !important;
+    }
     .last-card-wrapper-mobile {
         background: url(/img/mobilecard-bg.png) no-repeat;
         max-width: 343px;
