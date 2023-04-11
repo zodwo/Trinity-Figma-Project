@@ -415,7 +415,9 @@ option {
     text-align: center;
 }
 
-
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 22px !important;
+}
 
 
 
@@ -428,7 +430,9 @@ option {
     .col {
         padding: 10px !important;
     }
-
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 15px !important;
+    }
     .header span {
         font-size: 3rem;
     }
@@ -522,11 +526,12 @@ option {
 
     .btn-wrapper:not(.line.btn-wrapper){
         width: 70px !important;
-        height: 70px !important;
+        height: 50px !important;
     }
 
     .line{
         margin-bottom: 10px !important;
+        height: 30px !important;
     }
 
 
