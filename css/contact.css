@@ -40,7 +40,6 @@ header {
 }
 
 
-
 .logo {
     background: url(/img/logopc.png) no-repeat;
     width: 147px;
@@ -174,9 +173,7 @@ header {
 
 .for-mobile {
     display: none !important;
-    width: 100%;
 }
-
 
 .card.for-mobile {
     display: flex !important;
@@ -230,65 +227,33 @@ header {
         padding-bottom: 150px;
     }
 
+    .center-card-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .col:last-child {
+        max-width: 100%;
+        grid-column-end: span 2;
+    }
+
+    .col-txt {
+        left: 10px !important;
+        bottom: 40px !important;
+        font-size: 20px !important;
+    }
 
 }
 
 
-/* !--------------------------------POP UP CALL------------------------------ */
-/* !--------------------------------POP UP CALL------------------------------ */
-.pop-up-call {
-    position: absolute;
-    z-index: 4;
-    max-width: 725px;
-    width: 100%;
-    padding: 10px 30px;
 
-    background-color: #161516;
 
-    border: 1px solid #33B7BC;
 
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-40%);
-    box-shadow: 1px 1px 4px 770px rgba(0, 0, 0, 0.366);
-    border-radius: 40px;
-
-    display: none;
-}
-
-input:checked + .pop-up-call{
-    display: block !important
-}
-
-.head-wrapperss{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.head-wrapperss label{
-    display: inline-block;
-    height: 80px;
-}
-.head-wrapperss img{
-    height: 40px;
-    cursor: pointer;
-}
-
-.pop-up-call .frame2-col2{
-    height: fit-content;
-}
-#nmbr {
-    position: absolute;
-    left: -9999px;
-}
-/* !--------------------------------POP UP CALL------------------------------ */
-/* !--------------------------------POP UP CALL------------------------------ */
 
 /*------------------ FRAME 1---------------- */
 
 
 .frame1 {
-    padding-top: 120px;
+    margin-top: 120px;
 }
 
 .frame1-header {
@@ -318,6 +283,7 @@ h1 {
     font-size: 4.375em;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: #FFFFFF;
 }
@@ -423,11 +389,13 @@ h1 {
     cursor: pointer;
 }
 
+
+
 /* --------------- ---------------FRAME 2------------------------ */
 
 
 .frame2 {
-    margin-top: 260px;
+    margin-top: 160px;
 }
 
 .frame2-row {
@@ -514,10 +482,6 @@ form .btn {
     font-size: 1.125em;
     cursor: pointer;
 }
-
-
-
-
 
 /* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
 
@@ -610,199 +574,110 @@ form .btn {
 }
 
 
+
 * {
     transition: all 300ms;
 }
 
-
-/* --------------------------main start-------------------------- */
-/* --------------------------main start-------------------------- */
-
-.main {
-    background: url(/img/bgpicekr.png) no-repeat center/cover;
-}
-
-.frame3 {
-    margin-top: 20px;
-}
-
-.frame3 .container{
-    max-width: 960px;
-    width: 100%;
-    margin: auto;
-}
-
-.frame3-header {
-    max-width: 424px;
-    min-width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.frame3-header .fspan {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    font-size: 1.625em;
-    line-height: 90px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.header-text-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 30px;
-    max-width: 300px;
-    width: 100%;
-}
+/* !-------------------------------------------------------------------- */
 
 .col {
+    margin-top: 80px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.ftxt {
-    display: flex;
-    align-items: end;
-}
-
-
-.ftxt span {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 100;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff88;
-}
-
-.ftxt .fnumbers {
-    font-family: sans-serif;
-    font-size: 3em;
-    line-height: 38px;
-    margin: 0 10px 0 5px;
-    color: #fff !important;
-}
-
-.soft-txt {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 40px;
+.phone {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125em;
     display: flex;
     align-items: center;
     text-align: center;
     color: #535965;
 }
-/* ---------------------Message box start ----------------- */
-/* ---------------------Message box start ----------------- */
 
-
-
-
-.col-header{
-    font-family: 'Kanit';
-    font-weight: 500;
-    font-size: 1.25em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-}
-
-
-.col-paragraph p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.number {
+    font-family: kanit;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: 700;
+    font-size: 44px;
     display: flex;
     align-items: center;
-    color: #C6CDDA;
-}
-
-.mb-col-quit{
-    display: flex;
-    align-items: start;
     justify-content: center;
-
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    margin-left: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer !important;
 }
 
-/* -------------------------input-----------------------  */
-
-.message-box-col{
-    height: 99px ;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    
-    background: linear-gradient(108.31deg, rgba(17, 27, 35, 0.3) 3.3%, rgba(21, 23, 28, 0.3) 89.67%);
-    border: 1.5px solid #27323D;
-    border-radius: 20px;
-    padding: 30px ;
-    cursor: pointer;
+.number:last-child {
+    max-width: 740px;
+    width: 100%;
 }
 
 
 
-.chk{
-    display: block;
-}
 
-.cls{
+
+/* !-------------------------------------------------------------------- */
+
+
+
+/* !--------------------------------POP UP CALL------------------------------ */
+/* !--------------------------------POP UP CALL------------------------------ */
+.pop-up-call {
+    position: absolute;
+    z-index: 4;
+    max-width: 725px;
+    width: 100%;
+    padding: 10px 30px;
+
+    background-color: #161516;
+
+    border: 1px solid #33B7BC;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    box-shadow: 1px 1px 4px 770px rgba(0, 0, 0, 0.366);
+    border-radius: 40px;
+
     display: none;
 }
 
-.frame3-message-box-row{
-    margin-top: 70px;
+input:checked + .pop-up-call{
+    display: block !important
 }
 
-.frame3-message-box-row input{
+.head-wrapperss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-wrapperss label{
+    display: inline-block;
+    height: 80px;
+}
+.head-wrapperss img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.pop-up-call .frame2-col2{
+    height: fit-content;
+}
+#nmbr {
     position: absolute;
     left: -9999px;
 }
 
-.frame3-message-box-row input:checked + label .message-box-col {
-    height: fit-content;    
-}
-.frame3-message-box-row input:checked + label .message-box-col .mb-col .col-header .mc-col.mb-col-quit .cls{
-    display: block !important;
-}
-.frame3-message-box-row input:checked + label .message-box-col .mb-col .col-header .mc-col.mb-col-quit .chk{
-    display: none !important;
-}
 
-
-
-/* -------------------------input-----------------------  */
-
-
-
-/* --------------------------main end-------------------------- */
-/* --------------------------main end-------------------------- */
-
-
-
-
-
+/* !--------------------------------POP UP CALL------------------------------ */
+/* !--------------------------------POP UP CALL------------------------------ */
 
 
 
@@ -916,8 +791,8 @@ footer {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 100px;
-    flex-direction: column;
 }
+
 label.btn {
     grid-column-end:  span 2;
 }
@@ -947,7 +822,7 @@ label.btn {
     background-color: rgba(67, 216, 84, 1);
 }
 
-a.btn {
+span.btn {
     max-width: 100%;
     width: 100%;
     height: 64px;
@@ -1087,25 +962,12 @@ a.btn {
     width: 24px;
 }
 
-
-
-
-
-
-
-
-
-/*----------------------------------FOOTER END-------------------------------*/
-/*----------------------------------FOOTER END-------------------------------*/
-/*----------------------------------FOOTER END-------------------------------*/
-
-
-
-
-
-
-
-
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+/*----------------------------------FOOTER-------------------------------*/
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !Mobile */
 @media (max-width:769px) {
 
@@ -1175,7 +1037,8 @@ a.btn {
     .for-mobile {
         display: flex !important;
         flex-direction: column;
-        gap: 20px
+        gap: 20px;
+        width: 100%;
     }
 
     .card.for-mobile {
@@ -1197,6 +1060,46 @@ a.btn {
         z-index: 8;
     }
 
+    /* -----------------------Frame 1 ----------------------*/
+
+    h1 {
+        font-size: 2.5rem !important;
+        max-width: 270px;
+        width: 100%;
+    }
+
+    .frame1-select {
+        margin-top: 40px !important;
+    }
+
+    .frame1-select a {
+        font-size: 1.7em;
+    }
+
+    .frame1-select:last-child {
+        margin-top: 20px !important;
+    }
+
+    .frame1 {
+        margin-top: 50px;
+    }
+
+    .frame1-card-all-wrapper {
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+        height: 240px;
+    }
+
+    .card img {
+        height: 240px;
+        border-radius: 10px !important;
+    }
 
     /* -----------------------Frame 2 ----------------------*/
     .frame2 {
@@ -1216,12 +1119,6 @@ a.btn {
         font-size: 2.5em !important;
     }
 
-    form .btn {
-        max-width: 100%;
-        width: 100%;
-        height: 60px !important;
-    }
-
     .btn {
         max-width: 100%;
         width: 100%;
@@ -1232,6 +1129,12 @@ a.btn {
     }
 
     .frame2-col2 input {
+        height: 60px;
+    }
+
+    form .btn {
+        max-width: 100%;
+        width: 100%;
         height: 60px;
     }
 
@@ -1301,46 +1204,21 @@ a.btn {
         height: 400px;
     }
 
+    /* * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
+    .col {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
 
-/* =-================================================== */
-.frame3-message-box-row{
-    margin-top: 40px !important;
-}
-.frame1{
-    padding-top: 20px !important;
-}
+    .number {
+        font-size: 24px !important;
+    }
 
-.frame1-select{
-    margin-top: 20px !important;
-}
-.frame1-select:last-child{
-    margin-top: 60px !important;
-}
-h1{
-    font-size: 2.5em !important;
-    line-height: 40px !important;
-}
-
-
-.fspan{
-    font-size: 1.125em !important;
-    line-height: 2.5em !important;
-}
-
-
-.col-header span{
-    font-size: 18px !important;
-}
-
-.col-paragraph p{
-    font-size: 15px !important;
-}
-
-.message-box-col{
-    padding: 20px 5px 10px 10px !important;
-    height: 86px ;
-}
+    .number:last-child {
+        max-width: 320px;
+        width: 100%;
+    }
 
 
 
@@ -1374,8 +1252,6 @@ h1{
 
 
 
-
-
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
@@ -1383,6 +1259,7 @@ h1{
     footer {
         margin-top: 30px !important;
     }
+
     .footer-row {
         display: flex;
         flex-direction: column !important;

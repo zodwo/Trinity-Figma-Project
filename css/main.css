@@ -175,7 +175,7 @@ header {
     display: none !important;
 }
 
-.card.for-mobile{
+.card.for-mobile {
     display: flex !important;
     flex-direction: column;
     gap: 20px
@@ -229,6 +229,56 @@ header {
 
 
 }
+
+/* !--------------------------------POP UP CALL------------------------------ */
+/* !--------------------------------POP UP CALL------------------------------ */
+.pop-up-call {
+    position: absolute;
+    z-index: 4;
+    max-width: 725px;
+    width: 100%;
+    padding: 10px 30px;
+
+    background-color: #161516;
+
+    border: 1px solid #33B7BC;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    box-shadow: 1px 1px 4px 770px rgba(0, 0, 0, 0.366);
+    border-radius: 40px;
+
+    display: none;
+}
+
+input:checked + .pop-up-call{
+    display: block !important
+}
+
+.head-wrapperss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-wrapperss label{
+    display: inline-block;
+    height: 80px;
+}
+.head-wrapperss img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.pop-up-call .frame2-col2{
+    height: fit-content;
+}
+#nmbr {
+    position: absolute;
+    left: -9999px;
+}
+/* !--------------------------------POP UP CALL------------------------------ */
+/* !--------------------------------POP UP CALL------------------------------ */
 
 
 
@@ -557,8 +607,8 @@ form .btn {
 
 
 
-*{
-    transition:all 300ms ;
+* {
+    transition: all 300ms;
 }
 
 
@@ -672,6 +722,9 @@ footer {
     grid-template-columns: 1fr 100px;
     flex-direction: column;
 }
+label.btn {
+    grid-column-end:  span 2;
+}
 
 .footer-col-2-row-col-2 {
     display: flex;
@@ -698,7 +751,7 @@ footer {
     background-color: rgba(67, 216, 84, 1);
 }
 
-a.btn {
+span.btn {
     max-width: 100%;
     width: 100%;
     height: 64px;
@@ -862,7 +915,7 @@ a.btn {
 
     /* ! Main Menu Bar */
 
-    .navigation{
+    .navigation {
         display: none !important;
     }
 
@@ -929,6 +982,7 @@ a.btn {
         gap: 20px;
         width: 100%;
     }
+
     .card.for-mobile {
         display: none !important
     }
@@ -955,15 +1009,19 @@ a.btn {
         max-width: 270px;
         width: 100%;
     }
-    .frame1-select{
+
+    .frame1-select {
         margin-top: 20px !important;
     }
+
     .frame1-select a {
         font-size: 1.7em;
     }
-    .frame1-select:last-child{
+
+    .frame1-select:last-child {
         margin-top: 60px !important;
     }
+
     .frame1 {
         margin-top: 50px;
     }
@@ -1015,11 +1073,13 @@ a.btn {
     .frame2-col2 input {
         height: 60px;
     }
+
     form .btn {
         max-width: 100%;
         width: 100%;
         height: 60px;
-    }   
+    }
+
     /* --------------- ---------------FRAME 2 bg-mail-card--------------------- */
     .frame2-bg-card-main {
         border-radius: 20px 69px 20px 20px;
@@ -1086,6 +1146,32 @@ a.btn {
         height: 400px;
     }
 
+
+    /* pop uip */
+    .head-wrapperss span {
+        font-size: 24px !important;
+    }
+
+    .pop-up-call {
+        max-width: 425px;
+    }
+
+    .head-wrapperss label {
+        height: 52px;
+    }
+
+    .head-wrapperss label img {
+        height: 30px;
+    }
+
+    /* pop uip */
+
+
+
+
+
+
+
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
@@ -1093,7 +1179,7 @@ a.btn {
     footer {
         margin-top: 30px !important;
     }
-    
+
     .footer-row {
         display: flex;
         flex-direction: column !important;
