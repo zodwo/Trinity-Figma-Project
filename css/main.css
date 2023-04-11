@@ -961,7 +961,9 @@ a.btn {
     .frame1-select a {
         font-size: 1.7em;
     }
-
+    .frame1-select:last-child{
+        margin-top: 60px !important;
+    }
     .frame1 {
         margin-top: 50px;
     }
@@ -1088,6 +1090,10 @@ a.btn {
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
+    footer {
+        margin-top: 30px !important;
+    }
+    
     .footer-row {
         display: flex;
         flex-direction: column !important;

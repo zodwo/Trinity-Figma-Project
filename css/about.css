@@ -1364,7 +1364,10 @@ a.btn {
     .frame1-select{
         margin-top: 20px !important;
     }
-
+    .frame1-select:last-child{
+        margin-top: 60px !important;
+    }
+    
     h1 {
         font-size: 2.9rem !important;
     }
@@ -1569,6 +1572,10 @@ a.btn {
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
+    footer {
+        margin-top: 30px !important;
+    }
+    
     .footer-row {
         display: flex;
         flex-direction: column !important;
