@@ -202,7 +202,7 @@ header {
     }
 
     .frame1-select a {
-        font-size: 2em;
+        font-size: 1.5em !important;
     }
 
     .card-text h2 {
@@ -1267,7 +1267,8 @@ a.btn {
     }
 
     .frame2-col2 span {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
+        font-size: 2.5em !important;
     }
 
     form .btn {
@@ -1351,7 +1352,8 @@ a.btn {
     }
 
     .frame2-bg-mail-card {
-        height: 600px;
+        margin-top: 90px;
+        height: 400px;
     }
 
     /*-------------------------- #regi----------------------on--------------------- */
@@ -1359,9 +1361,12 @@ a.btn {
     .frame1 {
         padding-top: 50px !important
     }
+    .frame1-select{
+        margin-top: 20px !important;
+    }
 
     h1 {
-        font-size: 2.5rem !important;
+        font-size: 2.9rem !important;
     }
 
     .col:last-child .col-head-texts img {

@@ -199,7 +199,7 @@ header {
     }
 
     .frame1-select a {
-        font-size: 2em;
+        font-size: 1.5em !important;
     }
 
     .card-text h2 {
@@ -951,10 +951,13 @@ a.btn {
     /* -----------------------Frame 1 ----------------------*/
 
     h1 {
+        font-size: 2.5rem !important;
         max-width: 270px;
         width: 100%;
     }
-
+    .frame1-select{
+        margin-top: 20px !important;
+    }
     .frame1-select a {
         font-size: 1.7em;
     }
@@ -994,7 +997,8 @@ a.btn {
     }
 
     .frame2-col2 span {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
+        font-size: 2.5em !important;
     }
 
     .btn {
@@ -1076,7 +1080,8 @@ a.btn {
     }
 
     .frame2-bg-mail-card {
-        height: 600px;
+        margin-top: 90px;
+        height: 400px;
     }
 
     /*----------------------------------FOOTER-------------------------------*/
