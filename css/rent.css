@@ -426,7 +426,7 @@ option {
 
 @media (max-width: 1040px) {
     .col {
-        padding: 80px 20px !important;
+        padding: 10px !important;
     }
 
     .header span {
