@@ -159,13 +159,14 @@
 
 
             </div>
-            
+
             <label for="crwp" class="btn lbtn">View All</label>
             <label for="crwp" class="btn lbtn">Close All</label>
+
+
         </div>
-        
+
         <!-- ! -->
-        <div class="container">
             <!-- ! pop up calll -->
             <input type="checkbox" name="nmbr" id="nmbr">
             <div class="pop-up-call">
@@ -187,7 +188,6 @@
                 </div>
             </div>
             <!-- ! pop up calll -->
-        </div>
         <!-- ! -->
 
         <!-- Defuault center -->
@@ -368,6 +368,14 @@
         </div>
     </footer>
     <script>
+        const popupButton = document.getElementById("popup-button");
+        const popup = document.getElementById("popup");
+
+        popupButton.addEventListener("click", function () {
+            popup.style.display = "block";
+        });
+
+
         hamburger = document.querySelector(".menu-logo");
         hamburger.onclick = function () {
             navBar = document.querySelector(".nav-col1");

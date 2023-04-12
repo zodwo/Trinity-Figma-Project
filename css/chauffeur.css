@@ -617,6 +617,10 @@ form .btn {
 
 /* !-------------------------------------------------------------------- */
 
+main{
+    position: relative;
+}
+
 .card-wrapper {
     margin-top: 100px !important;
     display: grid;
@@ -899,11 +903,12 @@ footer {
     gap: 10px;
     grid-template-columns: 1fr 100px;
 }
-
 label.btn {
-    grid-column-end: span 2;
+    border: 1px solid #22ECF3;
+    background-color:  transparent !important;
+    margin-top: 20px;
+    grid-column-end:  span 2;
 }
-
 .footer-col-2-row-col-2 {
     display: flex;
     align-items: center;

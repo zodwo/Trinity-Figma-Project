@@ -717,7 +717,7 @@ form .btn {
 }
 
 input:checked + .center-card-wrapper{
-    height: 2400px !important;
+    height: 2200px !important;
 }
 
 input:checked + .center-card-wrapper + .open{
@@ -845,6 +845,9 @@ footer {
     flex-direction: column;
 }
 label.btn {
+    border: 1px solid #22ECF3;
+    background-color:  transparent !important;
+    margin-top: 20px;
     grid-column-end:  span 2;
 }
 

@@ -427,9 +427,7 @@ option {
 
 
 @media (max-width: 1040px) {
-    .col {
-        padding: 10px !important;
-    }
+
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 15px !important;
     }
