@@ -54,6 +54,8 @@ body {
 }
 
 /* --------------------------------------------------------- */
+
+
 .swiper {
     display: flex;
     max-width: 1070px !important;
@@ -163,11 +165,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     background: url(/img/icon/date1.png) no-repeat;
 }
 
-#time{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 select {
@@ -304,7 +302,6 @@ option {
 
 .label-wrapper label input:checked+.price {
     background: #103f4112;
-
 }
 
 .btn {

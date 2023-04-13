@@ -192,7 +192,9 @@ header {
     .nav-col3-txt-wrapper {
         gap: 10px;
     }
-
+    .frame2-row{
+        gap: 10px !important; 
+    }
     .nav-col3 {
         gap: 20px;
     }
