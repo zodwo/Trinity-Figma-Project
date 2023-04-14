@@ -1102,8 +1102,8 @@ span.btn {
 
 
         left: -250px;
-        top: 70px;
-        padding-top: 100px;
+        top: 60px;
+        padding-top: 50px;
 
         background-color: #161516;
         z-index: -1;
@@ -1112,7 +1112,6 @@ span.btn {
         width: 200px;
         height: 100vh;
     }
-
 
     .nav-col1.active .list-wrapper a {
         display: flex;
@@ -1124,7 +1123,7 @@ span.btn {
     .nav-col1.active .list-wrapper {
         display: flex;
         flex-direction: column;
-        top: 70px;
+        top: 60px;
         left: 0px;
         gap: 20px;
         width: 200px;

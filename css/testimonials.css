@@ -257,9 +257,9 @@ header {
         min-width: 350px !important;
     }
 
-.number{
-    font-size: 2.3em !important;
-}
+    .number {
+        font-size: 2.3em !important;
+    }
 
 
 
@@ -626,26 +626,26 @@ form .btn {
 /* ?------------------------- RENT CAR POP UPS-----------------------------*/
 /* ?------------------------- RENT CAR POP UPS-----------------------------*/
 
-.box-1-swipper {
+.box-wrapper .box-1-swipper {
     max-width: 980px !important;
 
 }
 
-.swipper {
+.box-wrapper .swipper {
     width: 100% !important;
 }
 
 
-.swiper-wrapper {
+.box-wrapper .swiper-wrapper {
     width: 100% !important;
 }
 
-.swiper-slide {
+.box-wrapper .swiper-slide {
     width: 100% !important;
     position: relative !important;
 }
 
-.swiper-slide img {
+.box-wrapper .swiper-slide img {
     width: 100%;
     height: 790px;
     object-fit: cover;
@@ -654,7 +654,7 @@ form .btn {
 
 
 
-.btn-wrapper {
+.box-wrapper .btn-wrapper {
     width: 100px !important;
     height: 60px !important;
     color: #717171 !important;
@@ -662,42 +662,40 @@ form .btn {
     cursor: pointer;
 }
 
-.swiper-button-prev {
+.box-wrapper .swiper-button-prev {
     border-radius: 40px 0px 0px 0px;
 }
 
-.swiper-button-next {
+.box-wrapper .swiper-button-next {
     border-radius: 0;
 }
 
 
-.swiper-button-next,
-.swiper-button-prev {
+.box-wrapper .swiper-button-next,
+.box-wrapper .swiper-button-prev {
     top: initial !important;
     height: initial !important;
     margin-top: initial !important;
     height: 90px !important;
 }
 
-.line {
+.box-wrapper .line {
     z-index: 22;
     height: 36px !important;
     width: 2px !important;
     border: 1px solid #272727 !important;
 }
 
-.btn-big-wrapper {
+.box-wrapper .btn-big-wrapper {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 220px !important;
-    height: 60px !important;
     bottom: 0px;
     right: -20px;
     position: absolute;
 }
 
-.btn-wrapper:hover:not(.line) {
+.box-wrapper .btn-wrapper:hover:not(.line) {
     color: #33B7BC !important;
 }
 
@@ -927,8 +925,6 @@ form .btn {
 /* ?------------------------- RENT CAR info pop up---------------------------*/
 
 
-
-
 .popup {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -984,7 +980,6 @@ form .btn {
     font-size: 1rem !important;
 }
 
-
 .col .property {
     font-family: 'Stolzl';
     font-weight: 500;
@@ -998,9 +993,6 @@ form .btn {
     font-size: 22px !important;
 }
 
-
-
-
 .header .img5 {
     background: url(/img/icon/1.png) no-repeat;
     background-position: center;
@@ -1012,10 +1004,6 @@ form .btn {
     cursor: pointer;
 }
 
-.header .img5:hover {
-    background: url(/img/icon/i-hover.png) no-repeat;
-    background-position: center;
-}
 
 /* ?------------------------- RENT CAR info pop up---------------------------*/
 /* ?------------------------- RENT CAR info pop up---------------------------*/
@@ -1075,8 +1063,109 @@ form .btn {
 
 /* ------------------------------------------------------------------- */
 
+/* ? _-------------------------box-4-swipper]]]]------------------------- */
+
+.box-4 .swiper{
+    width: 100% !important;
+    height: 550px;
+    margin-top: 90px;
+}
+
+.box-4 .swiper-wrapper {
+    gap: 25px;
+}
+
+.box-4 .swiper-slide {
+    max-width: 940px;
+    height: 550px;
+    position: relative !important;
+}
+
+.box-4 .swiper-slide img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!########################### */
+
+
+.box-4-header {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.box-4-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 20px;
+
+    background: linear-gradient(4.23deg, #161516 -1.57%, rgba(22, 21, 22, 0) 100.28%);
+}
+
+.box-4-text-header {
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.box-4-text-bottom {
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.box-4-text-bottom span {
+    color: #22ECF3;
+    margin: 0 5px;
+}
+
+
+
+.box-4-button-col {
+    width: 108px;
+    height: 54px;
+    border: 2px solid #33B7BC;
+    border-radius: 8px;
+
+
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ? _-------------------------box-4-swipper]]]]------------------------- */
 
 
 
@@ -1209,7 +1298,7 @@ input:checked+.pop-up-call {
     color: #DBDBDB;
 }
 
-.box-3{
+.box-3 {
     margin-top: 70px !important;
 }
 
@@ -1516,8 +1605,8 @@ span.btn {
 
 
         left: -250px;
-        top: 70px;
-        padding-top: 100px;
+        top: 60px;
+        padding-top: 50px;
 
         background-color: #161516;
         z-index: -1;
@@ -1538,7 +1627,7 @@ span.btn {
     .nav-col1.active .list-wrapper {
         display: flex;
         flex-direction: column;
-        top: 70px;
+        top: 60px;
         left: 0px;
         gap: 20px;
         width: 200px;
@@ -1874,7 +1963,8 @@ span.btn {
     .box2 .btnhed {
         font-size: 19px !important;
     }
-    .box-3-header{
+
+    .box-3-header {
         font-size: 3em !important;
     }
 
@@ -1886,31 +1976,34 @@ span.btn {
     .box2 .bold {
         font-size: 18px !important;
     }
-    .popup .col{
+
+    .popup .col {
         height: 140px !important;
     }
 
-    .box-3-descriptions{
+    .box-3-descriptions {
         font-weight: 400;
         font-size: 17px;
         line-height: 24px;
     }
-    
+
     .box-3 {
         height: 912.78px !important;
     }
-    .box-3 .container{
+
+    .box-3 .container {
         flex-direction: column;
     }
 
-    .box-3-right{
+    .box-3-right {
         max-width: 100% !important;
     }
 
-    .f7-btn span{
+    .f7-btn span {
         margin-left: 10px !important;
         font-size: 18px;
     }
+
 
     /*----------------------------------FOOTER-------------------------------*/
     /*----------------------------------FOOTER-------------------------------*/
