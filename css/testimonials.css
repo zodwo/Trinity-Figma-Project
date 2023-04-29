@@ -158,7 +158,7 @@ header {
     right: 110px;
     overflow: visible;
     opacity: 1;
-    height: 220px;
+    height: 170px;
     gap: 0px;
 }
 
@@ -1589,12 +1589,19 @@ span.btn {
 @media (max-width:769px) {
 
     /* ! Main Menu Bar */
-
+    .list-main-wrapper.active {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
     .navigation {
         display: none !important;
     }
 
     .navbar {
+        height: 80px;
         gap: 40px;
     }
 
@@ -1669,7 +1676,9 @@ span.btn {
     .nav-col3 .navigator-dubai a {
         display: flex !important;
     }
-
+    .navigator-dubai.active {
+        display: none !important;
+    }
     .nav-col3-txt-wrapper.active {
         top: 30px;
         right: 16px;

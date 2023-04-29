@@ -20,15 +20,17 @@
             <nav class="navbar">
                 <div class="nav-col1">
                     <div class="menu-logo"></div>
-                    <div class="list-wrapper">
-                        <a href="index.html">Car List</a>
-                        <a href="yach.html" class="activate">Yach List</a>
-                        <a href="chauffeur.html">Chauffeur</a>
-                        <div class="a for-mobile">
-                            <a href="about.html">About us</a>
-                            <a href="conditions.html">Conditions</a>
-                            <a href="testimonials.html">Testimonials</a>
-                            <a href="contacts.html">Contacts</a>
+                    <div class="list-main-wrapper">
+                        <div class="list-wrapper">
+                            <a href="index.html">Car List</a>
+                            <a href="yach.html" class="activate">Yach List</a>
+                            <a href="chauffeur.html">Chauffeur</a>
+                            <div class="a for-mobile">
+                                <a href="about.html">About us</a>
+                                <a href="conditions.html">Conditions</a>
+                                <a href="testimonials.html">Testimonials</a>
+                                <a href="contacts.html">Contacts</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -342,29 +344,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        hamburger = document.querySelector(".menu-logo");
-        hamburger.onclick = function () {
-            navBar = document.querySelector(".nav-col1");
-            navBar.classList.toggle("active");
-        }
-
-
-        lang = document.querySelector(".lang");
-        lang.onclick = function () {
-            langBar = document.querySelector(".nav-col3-txt-wrapper");
-            langBar.classList.toggle("active");
-        }
-
-        navigation = document.querySelector(".navigation");
-        navigation.onclick = function () {
-            BarNav = document.querySelector(".navigator-dubai");
-            BarNav.classList.toggle("active")
-        }
-    </script>
-
-
-
+    <script src="./js/main2.js"></script>
 </body>
 
 </html>
